@@ -1,0 +1,33 @@
+= Genetic Art
+
+Genetic Art was an experiment with genetic algorithms in Ruby. Genetic Art recreates an image out of triangles using a genetic algorithm. This project was inspired by Roger Alsing's post at
+http://rogeralsing.com/2008/12/07/genetic-programming-evolution-of-mona-lisa/
+
+== Dependencies
+Genetic Art requires the following dependencies to run:
+
+=== ImageMagik
+Genetic Art uses ImageMagik for image manipulation software. Information on installing ImageMagik can be found at
+http://www.imagemagick.org/script/index.php
+
+=== RMagik
+RMagik is a Ruby wrapper around the ImageMagik API. To install RMagik type
+
+  % gem install rmagik
+
+== How To Use
+
+Before running the script, you will need to change some code. On line 5 change the line
+
+  % @OUTPUT_FILE = 'images/lisa_simpson'
+to something meaninful to your image.
+
+Additionally, on line 10 change
+
+  % @TARGET_IMAGE = ImageList.new("lisa_simpson.jpg")
+the filename in quotes to the proper target image.
+
+After making those changes, simply type 
+
+  % ruby genetic_art_lcr10.rb
+to run the script.
